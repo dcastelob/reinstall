@@ -1,0 +1,969 @@
+
+
+Fri Oct 16 23:10:34 2020
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.4.0-7642-generic (#46~1598628707~20.04~040157c-Ubuntu SMP Fri Aug 28 18:02:16 UTC ) x86_64
+Compiler: GCC 9.2
+ext2fs lib: 1.45.5, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       976773168 sectors
+/dev/sda: user_max   976773168 sectors
+/dev/sda: native_max 976773168 sectors
+/dev/sda: dco        976773168 sectors
+/dev/sdb: LBA, HPA, LBA48, DCO support
+/dev/sdb: size       468877312 sectors
+/dev/sdb: user_max   468877312 sectors
+/dev/sdb: native_max 468877312 sectors
+/dev/sdb: dco        468877312 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop0 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop1 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop2 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop3 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop4 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop5 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop6 - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop7 - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63, sector size=512 - TOSHIBA MQ01ACF050, S/N:291MTG8HT, FW:AV003D
+Disk /dev/sdb - 240 GB / 223 GiB - CHS 29186 255 63, sector size=512 - WDC WDS240G2G0B-00EPW0, S/N:20180B802513, FW:UJ510000
+Disk /dev/mapper/cryptswap - 3241 MB / 3091 MiB - 6331391 sectors, sector size=512
+Disk /dev/dm-0 - 3241 MB / 3091 MiB - 6331391 sectors, sector size=512
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 500 GB / 465 GiB - TOSHIBA MQ01ACF050
+Partition table type: EFI GPT
+
+Analyse Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=976773167 (expected 976773167)
+hdr_lba_start=34
+hdr_lba_end=976773134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+Current partition structure:
+ 1 P Linux Swap                  2048    6334463    6332416
+ 2 P MS Data                  6334464    8431615    2097152 [NO NAME]
+ 3 P Linux filesys. data      8431616  976773119  968341504
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+     Linux Swap                  2040       2055         16
+     SWAP2 version 0, pagesize=8192, 8192 B
+NTFS at 63/188/61
+filesystem size           1021952
+sectors_per_cluster       8
+mft_lcn                   42581
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                     2048    1023999    1021952 [Recupera��o]
+     NTFS found using backup sector, blocksize=4096, 523 MB / 499 MiB
+NTFS at 63/188/61
+filesystem size           1021952
+sectors_per_cluster       8
+mft_lcn                   42581
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                  1023999    2045950    1021952
+     NTFS, blocksize=4096, 523 MB / 499 MiB
+FAT32 at 394/77/4
+FAT1 : 32-2079
+FAT2 : 2080-4127
+start_rootdir : 4128 root cluster : 2
+Data : 4128-2097151
+sectors : 2097152
+cluster_size : 8
+no_of_cluster : 261628 (2 - 261629)
+fat_length 2048 calculated 2044
+set_FAT_info: name from BS used
+
+FAT32 at 394/77/4
+FAT: cluster=2(0x2), pos=6338592
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+
+LVM magic value at 2341/205/60
+check_FAT: Bad number of sectors per cluster
+NTFS at 60674/249/55
+filesystem size           973148160
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                  1595392  974743551  973148160
+     NTFS found using backup sector, blocksize=4096, 498 GB / 464 GiB
+NTFS at 60674/249/55
+filesystem size           973148160
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+NTFS: Can't read MFT
+     MS Data                974743551 1947891710  973148160
+     NTFS, blocksize=4096, 498 GB / 464 GiB
+This partition ends after the disk limits. (start=974743551, size=973148160, end=1947891710, disk end=976773168)
+NTFS at 60674/249/56
+filesystem size           2027520
+sectors_per_cluster       8
+mft_lcn                   84480
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                972716033  974743552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+NTFS at 60674/249/56
+filesystem size           2027520
+sectors_per_cluster       8
+mft_lcn                   84480
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                974743552  976771071    2027520 [WINRETOOLS]
+     NTFS, blocksize=4096, 1038 MB / 990 MiB
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Check the harddisk size: HD jumper settings, BIOS detection...
+The harddisk (500 GB / 465 GiB) seems too small! (< 997 GB / 928 GiB)
+The following partition can't be recovered:
+     MS Data                974743551 1947891710  973148160
+     NTFS, blocksize=4096, 498 GB / 464 GiB
+
+Results
+     Linux Swap                  2040       2055         16
+     SWAP2 version 0, pagesize=8192, 8192 B
+     MS Data                     2048    1023999    1021952 [Recupera��o]
+     NTFS found using backup sector, blocksize=4096, 523 MB / 499 MiB
+     MS Data                  1023999    2045950    1021952
+     NTFS, blocksize=4096, 523 MB / 499 MiB
+     MS Data                  1595392  974743551  973148160
+     NTFS found using backup sector, blocksize=4096, 498 GB / 464 GiB
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+     MS Data                972716033  974743552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+     MS Data                974743552  976771071    2027520 [WINRETOOLS]
+     NTFS, blocksize=4096, 1038 MB / 990 MiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 16 linear /dev/sda 2040" | dmsetup create test0
+echo "0 1021952 linear /dev/sda 2048" | dmsetup create test1
+echo "0 1021952 linear /dev/sda 1023999" | dmsetup create test2
+echo "0 973148160 linear /dev/sda 1595392" | dmsetup create test3
+echo "0 2097152 linear /dev/sda 6334464" | dmsetup create test4
+echo "0 2027520 linear /dev/sda 972716033" | dmsetup create test5
+echo "0 2027520 linear /dev/sda 974743552" | dmsetup create test6
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+$MFTMirr does not match $MFT (record 0).
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 4096   usa_ofs: 0  usa_count: 0: Argumento inválido
+Index buffer (VCN 0x0) of directory inode 5 has a size (24) differing from the directory specified size (4096).
+ntfs_mst_post_read_fixup_warn: magic: 0x98a8ed97  size: 1024   usa_ofs: 45595  usa_count: 37410: Argumento inválido
+Record 0 has no FILE magic (0x98a8ed97)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x98a8ed97  size: 1024   usa_ofs: 45595  usa_count: 37410: Argumento inválido
+Record 0 has no FILE magic (0x98a8ed97)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x35fbb74c  size: 1024   usa_ofs: 4645  usa_count: 30454: Argumento inválido
+Record 0 has no FILE magic (0x35fbb74c)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x35fbb74c  size: 1024   usa_ofs: 4645  usa_count: 30454: Argumento inválido
+Record 0 has no FILE magic (0x35fbb74c)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+$MFTMirr does not match $MFT (record 3).
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+$MFTMirr does not match $MFT (record 0).
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 4096   usa_ofs: 0  usa_count: 0: Argumento inválido
+Index buffer (VCN 0x0) of directory inode 5 has a size (24) differing from the directory specified size (4096).
+ntfs_mst_post_read_fixup_warn: magic: 0x35fbb74c  size: 1024   usa_ofs: 4645  usa_count: 30454: Argumento inválido
+Record 0 has no FILE magic (0x35fbb74c)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x35fbb74c  size: 1024   usa_ofs: 4645  usa_count: 30454: Argumento inválido
+Record 0 has no FILE magic (0x35fbb74c)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+       0 0000 0000 00 00 00 00 00 00 00 00
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+NTFS filesystem needs to be repaired.
+
+
+dir_partition inode=5
+     MS Data                     2048    1023999    1021952 [Recupera��o]
+     NTFS found using backup sector, blocksize=4096, 523 MB / 499 MiB
+ntfs_readdir failed for cluster 5: Erro de entrada/saída
+Directory /
+       5 dr-xr-xr-x     0      0         0 17-Apr-2019 10:49 .
+       5 dr-xr-xr-x     0      0         0 17-Apr-2019 10:49 ..
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                  1023999    2045950    1021952
+     NTFS, blocksize=4096, 523 MB / 499 MiB
+Can't open filesystem. Filesystem seems damaged.
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                  1595392  974743551  973148160
+     NTFS found using backup sector, blocksize=4096, 498 GB / 464 GiB
+Can't open filesystem. Filesystem seems damaged.
+
+
+dir_partition inode=0
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+FAT: cluster=2(0x2), pos=6338592
+Directory /
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                972716033  974743552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+Can't open filesystem. Filesystem seems damaged.
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+NTFS filesystem needs to be repaired.
+
+
+dir_partition inode=5
+     MS Data                974743552  976771071    2027520 [WINRETOOLS]
+     NTFS, blocksize=4096, 1038 MB / 990 MiB
+Directory /
+       5 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 .
+       5 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 ..
+      36 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 recovery
+
+dir_partition inode=36
+     MS Data                974743552  976771071    2027520 [WINRETOOLS]
+     NTFS, blocksize=4096, 1038 MB / 990 MiB
+Directory /recovery
+      36 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 .
+       5 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 ..
+      37 dr-xr-xr-x     0      0         0 22-Mar-2019 19:10 windowsre
+Directory /
+       5 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 .
+       5 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 ..
+      36 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 recovery
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                972716033  974743552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+Can't open filesystem. Filesystem seems damaged.
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                972716033  974743552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+Can't open filesystem. Filesystem seems damaged.
+Can't open backup.log file: Arquivo ou diretório não encontrado
+interface_load
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+NTFS filesystem needs to be repaired.
+
+
+dir_partition inode=5
+   P MS Data                     2048    1023999    1021952 [Recupera��o]
+     NTFS found using backup sector, blocksize=4096, 523 MB / 499 MiB
+ntfs_readdir failed for cluster 5: Erro de entrada/saída
+Directory /
+       5 dr-xr-xr-x     0      0         0 17-Apr-2019 10:49 .
+       5 dr-xr-xr-x     0      0         0 17-Apr-2019 10:49 ..
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+   P MS Data                  1595392  974743551  973148160
+     NTFS found using backup sector, blocksize=4096, 498 GB / 464 GiB
+Can't open filesystem. Filesystem seems damaged.
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                972716033  97474ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x35fbb74c  size: 1024   usa_ofs: 4645  usa_count: 30454: Argumento inválido
+Record 0 has no FILE magic (0x35fbb74c)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x35fbb74c  size: 1024   usa_ofs: 4645  usa_count: 30454: Argumento inválido
+Record 0 has no FILE magic (0x35fbb74c)
+Failed to load $MFT: Erro de entrada/saída
+3552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+Can't open filesystem. Filesystem seems damaged.
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                972716033  974743552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+Can't open filesystem. Filesystem seems damaged.
+       0 0000 0000 00 00 00 00 00 00 00 00
+gpt_change_part_type
+       0 0000 0000 00 00 00 00 00 00 00 00
+Change partition type:
+     Extended Boot                  1  976773167  976773167
+Change partition type:
+     NTFS                           1  976773167  976773167
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                972716033  974743552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+Can't open filesystem. Filesystem seems damaged.
+
+
+dir_partition inode=0
+   P MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+FAT: cluster=2(0x2), pos=6338592
+Directory /
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+   P MS Data                  1595392  974743551  973148160
+     NTFS found using backup sector, blocksize=4096, 498 GB / 464 GiB
+Can't open filesystem. Filesystem seems damaged.
+       0 0000 0000 00 00 00 00 00 00 00 00
+Invalid partition structure.
+
+Analyse Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=976773167 (expected 976773167)
+hdr_lba_start=34
+hdr_lba_end=976773134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+Current partition structure:
+ 1 P Linux Swap                  2048    6334463    6332416
+ 2 P MS Data                  6334464    8431615    2097152 [NO NAME]
+ 3 P Linux filesys. data      8431616  976773119  968341504
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+     Linux Swap                  2040       2055         16
+     SWAP2 version 0, pagesize=8192, 8192 B
+FAT32 at 394/77/4
+FAT1 : 32-2079
+FAT2 : 2080-4127
+start_rootdir : 4128 root cluster : 2
+Data : 4128-2097151
+sectors : 2097152
+cluster_size : 8
+no_of_cluster : 261628 (2 - 261629)
+fat_length 2048 calculated 2044
+set_FAT_info: name from BS used
+
+FAT32 at 394/77/4
+FAT: cluster=2(0x2), pos=6338592
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+Search for partition aborted
+
+Results
+   P Linux Swap                  2040       2055         16
+     SWAP2 version 0, pagesize=8192, 8192 B
+   P MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 16 linear /dev/sda 2040" | dmsetup create test0
+echo "0 2097152 linear /dev/sda 6334464" | dmsetup create test1
+
+interface_write()
+ 1 P Linux Swap                  2040       2055         16
+ 2 P MS Data                  6334464    8431615    2097152 [NO NAME]
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+     Linux Swap                  2040       2055         16
+     SWAP2 version 0, pagesize=8192, 8192 B
+     Linux Swap                  2048    6334447    6332400
+     SWAP2 version 1, pagesize=4096, 3242 MB / 3091 MiB
+NTFS at 63/188/61
+filesystem size           1021952
+sectors_per_cluster       8
+mft_lcn                   42581
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                     2048    1023999    1021952 [Recupera��o]
+     NTFS found using backup sector, blocksize=4096, 523 MB / 499 MiB
+NTFS at 63/188/61
+filesystem size           1021952
+sectors_per_cluster       8
+mft_lcn                   42581
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                  1023999    2045950    1021952
+     NTFS, blocksize=4096, 523 MB / 499 MiB
+FAT32 at 63/188/62
+FAT1 : 6654-7422
+FAT2 : 7423-8191
+start_rootdir : 8192 root cluster : 2
+Data : 8192-204799
+sectors : 204800
+cluster_size : 2
+no_of_cluster : 98304 (2 - 98305)
+fat_length 769 calculated 769
+set_FAT_info: name from BS used
+
+FAT32 at 63/188/62
+FAT: cluster=2(0x2), pos=1032192
+     EFI System               1024000    1228799     204800 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+FAT32 at 63/189/5
+FAT1 : 6654-7422
+FAT2 : 7423-8191
+start_rootdir : 8192 root cluster : 2
+Data : 8192-204799
+sectors : 204800
+cluster_size : 2
+no_of_cluster : 98304 (2 - 98305)
+fat_length 769 calculated 769
+FAT differs, FAT sectors=752-768/769
+set_FAT_info: name from BS used
+
+FAT32 at 63/189/5
+FAT: cluster=2(0x2), pos=1032192
+     EFI System               1024000    1228799     204800 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+FAT32 at 63/189/5
+FAT1 : 6654-7422
+FAT2 : 7423-8191
+start_rootdir : 8192 root cluster : 2
+Data : 8192-204799
+sectors : 204800
+cluster_size : 2
+no_of_cluster : 98304 (2 - 98305)
+fat_length 769 calculated 769
+FAT differs, FAT sectors=752-768/769
+set_FAT_info: name from BS used
+
+FAT32 at 63/189/5
+FAT: Directory entry is marked as free.
+FAT: cluster=2(0x2), pos=1032198
+     MS Data                  1024006    1228805     204800 [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+FAT32 at 394/77/4
+FAT1 : 32-2079
+FAT2 : 2080-4127
+start_rootdir : 4128 root cluster : 2
+Data : 4128-2097151
+sectors : 2097152
+cluster_size : 8
+no_of_cluster : 261628 (2 - 261629)
+fat_length 2048 calculated 2044
+set_FAT_info: name from BS used
+
+FAT32 at 394/77/4
+FAT: cluster=2(0x2), pos=6338592
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+FAT32 at 394/77/10
+FAT1 : 32-2079
+FAT2 : 2080-4127
+start_rootdir : 4128 root cluster : 2
+Data : 4128-2097151
+sectors : 2097152
+cluster_size : 8
+no_of_cluster : 261628 (2 - 261629)
+fat_length 2048 calculated 2044
+set_FAT_info: name from BS used
+
+FAT32 at 394/77/10
+FAT: cluster=2(0x2), pos=6338592
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+FAT32 at 394/77/10
+FAT1 : 32-2079
+FAT2 : 2080-4127
+start_rootdir : 4128 root cluster : 2
+Data : 4128-2097151
+sectors : 2097152
+cluster_size : 8
+no_of_cluster : 261628 (2 - 261629)
+fat_length 2048 calculated 2044
+set_FAT_info: name from BS used
+
+FAT32 at 394/77/10
+FAT: Directory entry is marked as free.
+FAT: cluster=2(0x2), pos=6338598
+     MS Data                  6334470    8431621    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+
+LVM magic value at 2341/205/60
+check_FAT: Bad number of sectors per cluster
+NTFS at 60674/249/55
+filesystem size           973148160
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                  1595392  974743551  973148160
+     NTFS found using backup sector, blocksize=4096, 498 GB / 464 GiB
+NTFS at 60674/249/55
+filesystem size           973148160
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+NTFS: Can't read MFT
+     MS Data                974743551 1947891710  973148160
+     NTFS, blocksize=4096, 498 GB / 464 GiB
+This partition ends after the disk limits. (start=974743551, size=973148160, end=1947891710, disk end=976773168)
+NTFS at 60674/249/56
+filesystem size           2027520
+sectors_per_cluster       8
+mft_lcn                   84480
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                972716033  974743552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+NTFS at 60674/249/56
+filesystem size           2027520
+sectors_per_cluster       8
+mft_lcn                   84480
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                974743552  976771071    2027520 [WINRETOOLS]
+     NTFS, blocksize=4096, 1038 MB / 990 MiB
+NTFS at 60780/103/28
+heads/cylinder 16 (NTFS) != 255 (HD)
+sect/track 2 (NTFS) != 63 (HD)
+filesystem size           6174
+sectors_per_cluster       1
+mft_lcn                   2058
+mftmirr_lcn               5162
+clusters_per_mft_record   2
+clusters_per_index_record 8
+     MS Data                976431043  976437216       6174
+     NTFS found using backup sector, blocksize=512, 3161 KB / 3087 KiB
+NTFS at 60780/103/28
+heads/cylinder 16 (NTFS) != 255 (HD)
+sect/track 2 (NTFS) != 63 (HD)
+filesystem size           6174
+sectors_per_cluster       1
+mft_lcn                   2058
+mftmirr_lcn               5162
+clusters_per_mft_record   2
+clusters_per_index_record 8
+     MS Data                976437216  976443389       6174 [Boot]
+     NTFS, blocksize=512, 3161 KB / 3087 KiB
+NTFS at 60781/45/9
+heads/cylinder 16 (NTFS) != 255 (HD)
+sect/track 2 (NTFS) != 63 (HD)
+filesystem size           6174
+sectors_per_cluster       1
+mft_lcn                   2058
+mftmirr_lcn               5162
+clusters_per_mft_record   2
+clusters_per_index_record 8
+     MS Data                976443435  976449608       6174
+     NTFS found using backup sector, blocksize=512, 3161 KB / 3087 KiB
+NTFS at 60781/45/9
+heads/cylinder 16 (NTFS) != 255 (HD)
+sect/track 2 (NTFS) != 63 (HD)
+filesystem size           6174
+sectors_per_cluster       1
+mft_lcn                   2058
+mftmirr_lcn               5162
+clusters_per_mft_record   2
+clusters_per_index_record 8
+     MS Data                976449608  976455781       6174 [Boot]
+     NTFS, blocksize=512, 3161 KB / 3087 KiB
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Check the harddisk size: HD jumper settings, BIOS detection...
+The harddisk (500 GB / 465 GiB) seems too small! (< 997 GB / 928 GiB)
+The following partition can't be recovered:
+     MS Data                974743551 1947891710  973148160
+     NTFS, blocksize=4096, 498 GB / 464 GiB
+
+Results
+     Linux Swap                  2040       2055         16
+     SWAP2 version 0, pagesize=8192, 8192 B
+     MS Data                     2048    1023999    1021952 [Recupera��o]
+     NTFS found using backup sector, blocksize=4096, 523 MB / 499 MiB
+     Linux Swap                  2048    6334447    6332400
+     SWAP2 version 1, pagesize=4096, 3242 MB / 3091 MiB
+     MS Data                  1023999    2045950    1021952
+     NTFS, blocksize=4096, 523 MB / 499 MiB
+     EFI System               1024000    1228799     204800 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+     MS Data                  1024006    1228805     204800 [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+     MS Data                  1595392  974743551  973148160
+     NTFS found using backup sector, blocksize=4096, 498 GB / 464 GiB
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+     MS Data                  6334470    8431621    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+     MS Data                972716033  974743552    2027520
+     NTFS found using backup sector, blocksize=4096, 1038 MB / 990 MiB
+     MS Data                974743552  976771071    2027520 [WINRETOOLS]
+     NTFS, blocksize=4096, 1038 MB / 990 MiB
+     MS Data                976431043  976437216       6174
+     NTFS found using backup sector, blocksize=512, 3161 KB / 3087 KiB
+     MS Data                976437216  976443389       6174 [Boot]
+     NTFS, blocksize=512, 3161 KB / 3087 KiB
+     MS Data                976443435  976449608       6174
+     NTFS found using backup sector, blocksize=512, 3161 KB / 3087 KiB
+     MS Data                976449608  976455781       6174 [Boot]
+     NTFS, blocksize=512, 3161 KB / 3087 KiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 16 linear /dev/sda 2040" | dmsetup create test0
+echo "0 1021952 linear /dev/sda 2048" | dmsetup create test1
+echo "0 6332400 linear /dev/sda 2048" | dmsetup create test2
+echo "0 1021952 linear /dev/sda 1023999" | dmsetup create test3
+echo "0 204800 linear /dev/sda 1024000" | dmsetup create test4
+echo "0 204800 linear /dev/sda 1024006" | dmsetup create test5
+echo "0 973148160 linear /dev/sda 1595392" | dmsetup create test6
+echo "0 2097152 linear /dev/sda 6334464" | dmsetup create test7
+echo "0 2097152 linear /dev/sda 6334470" | dmsetup create test8
+echo "0 2027520 linear /dev/sda 972716033" | dmsetup create test9
+echo "0 2027520 linear /dev/sda 974743552" | dmsetup create test10
+echo "0 6174 linear /dev/sda 976431043" | dmsetup create test11
+echo "0 6174 linear /dev/sda 976437216" | dmsetup create test12
+echo "0 6174 linear /dev/sda 976443435" | dmsetup create test13
+echo "0 6174 linear /dev/sda 976449608" | dmsetup create test14
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+$MFTMirr does not match $MFT (record 0).
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 4096   usa_ofs: 0  usa_count: 0: Argumento inválido
+Index buffer (VCN 0x0) of directory inode 5 has a size (24) differing from the directory specified size (4096).
+ntfs_mst_post_read_fixup_warn: magic: 0x98a8ed97  size: 1024   usa_ofs: 45595  usa_count: 37410: Argumento inválido
+Record 0 has no FILE magic (0x98a8ed97)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x98a8ed97  size: 1024   usa_ofs: 45595  usa_count: 37410: Argumento inválido
+Record 0 has no FILE magic (0x98a8ed97)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+NTFS filesystem needs to be repaired.
+
+
+dir_partition inode=5
+     MS Data                     2048    1023999    1021952 [Recupera��o]
+     NTFS found using backup sector, blocksize=4096, 523 MB / 499 MiB
+ntfs_readdir failed for cluster 5: Erro de entrada/saída
+Directory /
+       5 dr-xr-xr-x     0      0         0 17-Apr-2019 10:49 .
+       5 dr-xr-xr-x     0      0         0 17-Apr-2019 10:49 ..
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                  1023999    2045950    1021952
+     NTFS, blocksize=4096, 523 MB / 499 MiB
+Can't open filesystem. Filesystem seems damaged.
+
+
+dir_partition inode=0
+     EFI System               1024000    1228799     204800 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+FAT: cluster=2(0x2), pos=1032192
+Directory /
+       3 drwxr-xr-x     0      0         0 18-Sep-2020 22:15 EFI
+   26416 drwxr-xr-x     0      0         0 17-Apr-2019 12:20 System Volume Information
+
+dir_partition inode=3
+     EFI System               1024000    1228799     204800 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+FAT: cluster=3(0x3), pos=1032194
+Directory /EFI
+       3 drwxr-xr-x     0      0         0 17-Apr-2019 10:40 .
+       0 drwxr-xr-x     0      0         0 17-Apr-2019 10:40 ..
+       4 drwxr-xr-x     0      0         0 17-Apr-2019 10:40 Microsoft
+   10462 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 Boot
+   29133 drwxr-xr-x     0      0         0 18-Sep-2020 22:15 Dell
+FAT: cluster=2(0x2), pos=1032192
+Directory /
+       3 drwxr-xr-x     0      0         0 18-Sep-2020 22:15 EFI
+   26416 drwxr-xr-x     0      0         0 17-Apr-2019 12:20 System Volume Information
+       0 0000 0000 00 00 00 00 00 00 00 00
+
+
+dir_partition inode=0
+     EFI System               1024000    1228799     204800 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+FAT: cluster=2(0x2), pos=1032192
+Directory /
+       3 drwxr-xr-x     0      0         0 18-Sep-2020 22:15 EFI
+   26416 drwxr-xr-x     0      0         0 17-Apr-2019 12:20 System Volume Information
+       0 0000 0000 00 00 00 00 00 00 00 00
+       0 0000 0000 00 00 00 00 00 00 00 00
+       0 0000 0000 00 00 00 00 00 00 00 00
+       0 0000 0000 00 00 00 00 00 00 00 00
+       0 0000 0000 00 00 00 00 00 00 00 00
+
+
+dir_partition inode=0
+   P EFI System               1024000    1228799     204800 [EFI System Partition] [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+FAT: cluster=2(0x2), pos=1032192
+Directory /
+       3 drwxr-xr-x     0      0         0 18-Sep-2020 22:15 EFI
+   26416 drwxr-xr-x     0      0         0 17-Apr-2019 12:20 System Volume Information
+
+
+dir_partition inode=0
+     MS Data                  1024006    1228805     204800 [NO NAME]
+     FAT32, blocksize=1024, 104 MB / 100 MiB
+FAT: Directory entry is marked as free.
+FAT: cluster=2(0x2), pos=1032198
+Directory /
+       5 drwxr-xr-x     0      0         0 17-Apr-2019 10:40 .
+       4 drwxr-xr-x     0      0         0 17-Apr-2019 10:40 ..
+       6 -rwxr-xr-x     0      0     32768 16-Oct-2020 20:31 BCD
+      14 -rwxr-xr-x     0      0     32768 17-Apr-2019 10:40 BCD.LOG
+      34 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 bg-BG
+   25244 -rwxr-xr-x     0      0     31232 15-Sep-2018 04:29 kd_02_10df.dll
+    3047 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 cs-CZ
+    3245 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 da-DK
+    3441 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 de-DE
+    3643 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 el-GR
+    3848 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 en-GB
+    3995 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 en-US
+    4186 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 es-ES
+    4384 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 es-MX
+    4537 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 et-EE
+    4686 drwxr-xr-x     0      0         0 17-Apr-201ntfs_mst_post_read_fixup_warn: magic: 0x35fbb74c  size: 1024   usa_ofs: 4645  usa_count: 30454: Argumento inválido
+Record 0 has no FILE magic (0x35fbb74c)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x35fbb74c  size: 1024   usa_ofs: 4645  usa_count: 30454: Argumento inválido
+Record 0 has no FILE magic (0x35fbb74c)
+Failed to load $MFT: Erro de entrada/saída
+$MFTMirr does not match $MFT (record 3).
+ntfs_mst_post_read_fixup_warn: magic: 0xfd2ed4d5  size: 1024   usa_ofs: 21910  usa_count: 61794: Argumento inválido
+Record 0 has no FILE magic (0xfd2ed4d5)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0xfd2ed4d5  size: 1024   usa_ofs: 21910  usa_count: 61794: Argumento inválido
+Record 0 has no FILE magic (0xfd2ed4d5)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+ntfs_mst_post_read_fixup_warn: magic: 0x00000000  size: 1024   usa_ofs: 0  usa_count: 0: Argumento inválido
+Record 0 has no FILE magic (0x0)
+Failed to load $MFT: Erro de entrada/saída
+9 10:48 fi-FI
+    4884 drwxr-xr-x     0      0         0 17-Apr-2019 10:48 fr-CA
+Can't open backup.log file: Arquivo ou diretório não encontrado
+interface_load
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                  1595392  974743551  973148160
+     NTFS found using backup sector, blocksize=4096, 498 GB / 464 GiB
+Can't open filesystem. Filesystem seems damaged.
+
+
+dir_partition inode=0
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+FAT: cluster=2(0x2), pos=6338592
+Directory /
+
+
+dir_partition inode=0
+     MS Data                  6334470    8431621    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+FAT: Directory entry is marked as free.
+FAT: cluster=2(0x2), pos=6338598
+Directory /
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+NTFS filesystem needs to be repaired.
+
+
+dir_partition inode=5
+     MS Data                974743552  976771071    2027520 [WINRETOOLS]
+     NTFS, blocksize=4096, 1038 MB / 990 MiB
+Directory /
+       5 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 .
+       5 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 ..
+      36 dr-xr-xr-x     0      0         0 22-Mar-2019 19:05 recovery
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                976431043  976437216       6174
+     NTFS found using backup sector, blocksize=512, 3161 KB / 3087 KiB
+Can't open filesystem. Filesystem seems damaged.
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+
+dir_partition inode=5
+     MS Data                976437216  976443389       6174 [Boot]
+     NTFS, blocksize=512, 3161 KB / 3087 KiB
+Directory /
+       5 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 .
+       5 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 ..
+      27 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 System Volume Information
+ntfs_device_testdisk_io_ioctl() unimplemented
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+     MS Data                976443435  976449608       6174
+     NTFS found using backup sector, blocksize=512, 3161 KB / 3087 KiB
+Can't open filesystem. Filesystem seems damaged.
+ntfs_device_testdisk_io_ioctl() unimplemented
+
+
+dir_partition inode=5
+     MS Data                976449608  976455781       6174 [Boot]
+     NTFS, blocksize=512, 3161 KB / 3087 KiB
+Directory /
+       5 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 .
+       5 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 ..
+      27 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 System Volume Information
+
+dir_partition inode=27
+     MS Data                976449608  976455781       6174 [Boot]
+     NTFS, blocksize=512, 3161 KB / 3087 KiB
+Directory /System Volume Information
+      27 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 .
+       5 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 ..
+Directory /
+       5 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 .
+       5 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 ..
+      27 dr-xr-xr-x     0      0         0 15-Feb-2005 18:33 System Volume Information
+
+
+dir_partition inode=0
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+FAT: cluster=2(0x2), pos=6338592
+Directory /
+
+
+dir_partition inode=0
+     MS Data                  6334470    8431621    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+FAT: Directory entry is marked as free.
+FAT: cluster=2(0x2), pos=6338598
+Directory /
+Invalid partition structure.
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=976773167 (expected 976773167)
+hdr_lba_start=34
+hdr_lba_end=976773134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+ 1 P Linux Swap                  2048    6334463    6332416
+ 2 P MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+ 3 P Linux filesys. data      8431616  976773119  968341504
+New options :
+ Dump : No
+ Align partition: Yes
+ Expert mode : No
+
+Analyse Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=976773167 (expected 976773167)
+hdr_lba_start=34
+hdr_lba_end=976773134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+Current partition structure:
+ 1 P Linux Swap                  2048    6334463    6332416
+ 2 P MS Data                  6334464    8431615    2097152 [NO NAME]
+ 3 P Linux filesys. data      8431616  976773119  968341504
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+     Linux Swap                  2040       2055         16
+     SWAP2 version 0, pagesize=8192, 8192 B
+FAT32 at 394/77/4
+FAT1 : 32-2079
+FAT2 : 2080-4127
+start_rootdir : 4128 root cluster : 2
+Data : 4128-2097151
+sectors : 2097152
+cluster_size : 8
+no_of_cluster : 261628 (2 - 261629)
+fat_length 2048 calculated 2044
+set_FAT_info: name from BS used
+
+FAT32 at 394/77/4
+FAT: cluster=2(0x2), pos=6338592
+     MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+Search for partition aborted
+
+Results
+   P Linux Swap                  2040       2055         16
+     SWAP2 version 0, pagesize=8192, 8192 B
+   P MS Data                  6334464    8431615    2097152 [NO NAME]
+     FAT32, blocksize=4096, 1073 MB / 1024 MiB
+
+Hint for advanced users: dmsetup may be used if you prefer to avoid rewriting the partition table for the moment:
+echo "0 16 linear /dev/sda 2040" | dmsetup create test0
+echo "0 2097152 linear /dev/sda 6334464" | dmsetup create test1
+Can't open backup.log file: Arquivo ou diretório não encontrado
+interface_load
+
+interface_write()
+ 1 P Linux Swap                  2040       2055         16
+ 2 P MS Data                  6334464    8431615    2097152 [NO NAME]
+simulate write!
+
+TestDisk exited normally.
